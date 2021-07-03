@@ -7,18 +7,25 @@
     <title>Home page</title>
     <link rel="stylesheet" href="./homepage.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="./homepage.js" defer></script>
 </head>
 <body>
+    
     <section id="landing">
-    <nav>
+    <nav class="navbar">
         <img src="./logo/hometeach 1.png" alt="logo" class="logo">
-
-            <a href="#become-a-tutor" target="">Become a tutor</a>
-            <a href="#hire-a-tutor" target="">Get a tutor</a>
-            <a href="#contact-us" target="">Contact Us</a>
-            <a href="#about-us" target="">About Us</a>
-       
-        <a href="#" target=""><button type="submit" class="login">LOGIN</button></a>
+        <a href="#" class="hamburger">
+            <span class="rod"></span>
+            <span class="rod"></span>
+            <span class="rod"></span>
+        </a>
+        <ul class="navlink">
+        <li><a href="#become-a-tutor" target="">Become a tutor</a></li>
+        <li><a href="#hire-a-tutor" target="">Get a tutor</a></li>
+        <li><a href="#contact-us" target="">Contact Us</a></li>
+        <li><a href="#about-us" target="">About Us</a></li>
+        </ul>
+        <a href="#" target=""><button type="submit" class="login">LOG IN</button></a>
     </nav>
     <main>
         <h1 class="heading">Want the best Tutor for your wards?</h1>
@@ -36,9 +43,6 @@
             <div class="counter" id="counter-b">
                 <p>Registered Tutors</p>
                 <h3>75</h3>
-            </div>
-            <div>
-                <button type="button" >Get Started</button>
             </div>
         </div>
         <div class="sub">
@@ -115,7 +119,6 @@
         <div class="second-half">
             <div class="text-a">
             <p>Home teach is an edtech(educational technology) company that focuses on connecting qualified teacher to the parent in need of greater experience for their wards...<a href="#" target=""class="orange">Read more</a></p>
-            <br>
             <p>Home teach is an edtech(educational technology) company that focuses on connecting qualified teacher to the parent in need of greater experience for their wards...<a href="#" target="" class="orange">Read more</a></p>
             </div>
         </div>
@@ -124,7 +127,6 @@
         <div class="first-half-b">
             <div class="text-b">
             <p>Home teach is an edtech(educational technology) company that focuses on connecting qualified teacher to the parent in need of greater experience for their wards...<a href="#" target="" class="orange">Read more</a></p>
-            <br>
             <p>Home teach is an edtech(educational technology) company that focuses on connecting qualified teacher to the parent in need of greater experience for their wards...<a href="#" target="" class="orange">Read more</a></p>
             </div>
         </div>
@@ -138,14 +140,14 @@
             <div class="footer-items"><img src="./logo/hometeach 4.png" alt="logo" class="logo"></div>
             <div class="footer-items">
                 <p><strong>Explore</strong></p>
-                <ul class="ul">
+                <ul class="footer-list">
                     <li><a href="#"class="link" >Courses</a></li>
                     <li><a href="#"class="link" >Article</a></li>
                 </ul>
             </div>
             <div class="footer-items">
                 <p><strong>About</strong></p>
-                <ul class="ul">
+                <ul class="footer-list">
                     <li><a href="#" class="link">Privacy</a></li>
                     <li><a href="#" class="link">Terms & Conditions</a></li>
                     <li><a href="#" class="link" >Support</a></li>
@@ -153,7 +155,7 @@
             </div>
             <div class="footer-items">
                 <p><strong>Community</strong></p>
-                <ul class="ul">
+                <ul class="footer-list">
                     <li><a href="#"class="link">Subcriptions</a></li>
                     <li><a href="#" class="link">Lessons</a></li>
                 </ul>

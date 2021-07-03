@@ -45,6 +45,42 @@ nav a:hover{
     border-radius: 10px;
     transition: ease-in-out 0.4s;
 }
+ul.navlink {
+    display: flex;
+    margin: 0; 
+    padding: 0;
+}
+
+.navlink li {
+    margin: 0 2vw;
+    list-style: none;
+    font-size: 1.1rem;
+}
+
+ul li a {
+    text-decoration:none;
+    color: white;
+    padding: 0.5vw;
+    display: block;
+    font-size: 24px;
+}
+
+.hamburger {
+    position: absolute;
+    top: 40px;
+    left: 16px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 25px;  
+}
+.hamburger .rod {
+        height: 3px;
+        width: 100%;
+        background-color: #ffb325;
+        border-radius: 5px;
+ }
 .login{
     background-color: #4ca772;
     color: white;
@@ -111,7 +147,7 @@ main p{
 }
 .part1{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     border: 1px outset #7e7e7e;
     margin: -5% auto;
     padding: 1%;
@@ -122,8 +158,11 @@ main p{
     border-style: none inset none none;
     border-color: #c4c4c4;
     margin: 2%;
-    padding-right: 2%;
+    padding-right: 23%;
     text-align: center;
+}
+#counter-b{
+    border: none;
 }
 .counter p{
     font-size: 22px;
@@ -136,8 +175,6 @@ main p{
 
 }
 #counter-b{
-    margin-left: -16%;
-    padding-right: -28%;
     border: none;
 }
 .sub{
@@ -233,12 +270,13 @@ main p{
     height:25vh;
 }
 .text-box1 p{
-    font-size: 24px;
+    font-size: 22px;
     font-weight: normal;
     color: #333333;
     line-height: 161%;
     font-weight: 400;
     padding: 20px;
+    text-align: justify;
 }
 .btn4{ 
     width: 25%;
@@ -308,6 +346,7 @@ main p{
     position: relative;
 }
 .text-box2{
+    text-align: justify;
     position: absolute;
     top: 20%;
     right:15%;
@@ -377,6 +416,7 @@ main p{
     padding: 0 30px;
     left: 50%;
     line-height: 36px;
+    text-align: justify;
     
 }
 .text-b{
@@ -388,6 +428,7 @@ main p{
     right: 50%;
     padding: 0 30px;
     line-height: 36px;
+    text-align: justify;
     
 }
 .first-half-b{
@@ -417,9 +458,10 @@ footer{
     align-items: flex-start;
     padding-top: 3%;
 }
-.ul, .link{
+.footer-list, .link{
     list-style: none;
     color: white;
+    font-size: 16px;
 }
 footer .link:hover{
     background-color: #ffb425;
@@ -429,7 +471,7 @@ footer .link:hover{
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
-    padding: 2% 0;
+    padding: 0% 0;
     width: 80%;
 }
 #icons{
@@ -508,45 +550,172 @@ footer .link:hover{
 
     }
     
+}*/
+@media screen and (max-width: 425px) {
+    body{
+        height:auto;
+    }
+    .hamburger{
+        display: flex;
+    }
+   .navlink{
+       display: none;
+       width: 100%;
+       display: none;
+   }
+  .navbar{ 
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+       .navlink ul{
+         flex-direction: row;
+          width: 100%;
+    }
+      .navlink li{
+        text-align: center;
+    }
+       .navlink li a {
+         padding: 0.5rem 1rem;
+         font-size: 10px;
+    }
+       .navlink.active{
+         display: flex;
+       }
+       #about-us, #contact-us{
+           height: 60vh;
+       }
+       .text-a, .text-b{
+           line-height: 18px;
+           padding:0px;
+       }
+       .header{
+           font-size: 22px;
+       }
+       .text-box1, .text{
+           width: 90%;
+       }
 }
-@media screen and (max-width:1212px) {
+@media screen and (max-width: 768px) {
+    nav{
+        font-size: 12px;
+    }
+
+    .login{
+        width: 120px;
+    
+    }
+    main p{
+        margin-bottom: 5%;
+    }
+    .counter{
+        padding: 0;
+    }
+    .counter p{
+        font-size: 15px;
+    }
+    .counter h3{
+        font-size: 35px;
+    }
+    .bar{
+        width: 24%;
+    }
+
+    .card1, .card2{
+        line-height: 20px;
+    }
+    h2{
+        font-size: 30px;
+    }
+    p, strong, h6{
+        font-size: 12px;
+    }
+    .arrow-nav1, .arrow-nav2{
+        font-size: 40px;
+    }
+    .text-a, .text-b{
+        line-height: 24px;
+    }
+    .text-box1 p, .text-box2 p{
+        padding: 10px;
+        font-size: 14px;
+    }
+    .footer-items, .link{
+        font-size: 10px;
+    }
+}
+@media screen and (max-width:1024px) {
     body{
         width: 100%;
         height: auto;
     }
     #landing{
         height: auto;
-
     }
-    nav{
-        width: 80%;
+    ul li a{
+        font-size: 15px;
     }
-
-    button .login{
-        padding: 5px;
+    .login{
+        font-size: 14px;
+        padding: 16px 20px;
     }
     main h1{
-        font-size: 32px;
+        font-size: 35px;
     }
     main p{
         font-size: 18px;
     }
-    button .btn1{
-          margin-top: -70px;     
-        
+    .btn{
+        margin: 0% auto;
+        padding-bottom: 4%;
     }
-    div .container{
-        font-size: 12px;
+    .btn3{
+        bottom:8px;
+        font-size: 16px;
     }
-    .text-box1 p, .text-box2 p, .text-a, .text-b{
-        font-size: 18px;
-        font-weight: normal;
-        color: #333333;
-
+    .btn4, .btn5{
+        font-size: 16px;
     }
+    .part1{
+        margin: -3% auto;
+        width:98%;
+    }
+    .sub-header{
+        padding-top: 1%;
+        font-size: 30px;
+    }
+    .header{
+        font-size: 30px;
+    }
+    #testimonials h2{
+        font-size: 30px;
+    }
+    .counter{
+        padding-right: 12%;
+    }
+    .topic1, .topic2, .topic3, .topic4, .topic5, .topic6{
+        font-size: 11px;
+    }
+    .text-box1 p{
+        padding: 5px 14px;
+    }
+    .card1, .card2{
+        font-size: 16px;
+        padding: 1% 4%;
+    }
+    .text-box1 p, .text-box2 p{
+        font-size: 15px;
+        text-align: justify;
+    }
+    .text-a, .text-b{
+        font-size: 14px;
+        text-align: justify;
+}
     .logo-a, .logo-b{
-        width: 50%;
-       left: 30%;
+        width:28%;
+    }
+    .footer-items, .link{
+        font-size: 11px;
     }
 
-}*/
+}
