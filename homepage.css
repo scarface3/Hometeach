@@ -110,7 +110,7 @@ main h1{
     font-weight: bold;
     letter-spacing: 0.03em;
     line-height: 152.5%;
-    margin-top: 283px;
+    margin-top: 200px;
     letter-spacing: 0.03em;
 }
 main p{
@@ -255,19 +255,14 @@ main p{
    position: relative;
    padding-top: 7%;
 }
-.btn3{
-    background-color: #4ca772;
-    color: white;
+.line3 a{
+    color: #4ca772;
     font-size: 24px;
     font-weight: 700;
-    border-radius: 20px;
     position: absolute;
-    right: 0px;
+    right: -134px;
     bottom: 16px;
-    width: 417.84px;
-    border: none;
     padding: 36px 133px;
-    line-height: 36px;
 }
 
 /* 3rd section*/
@@ -536,7 +531,6 @@ footer .link:hover{
         display: flex;
         width: 20%;
         height: 5%;
-        /* justify-items: flex-end; */
     }
     .bar1{
         color:#4ca772;
@@ -659,13 +653,8 @@ footer .link:hover{
     .line3{
         padding-top: 28%;
     }
-    .btn3{
-        width:200px;
-        font-size: 12px;
-        padding:18px 10px;
-        margin:0 auto 20px;
-        line-height: 14px;
-        right: 20%;
+    .line3 a{
+        right: -98px;
     }
     .header, #testimonials h2{
         font-size: 24px;
@@ -676,7 +665,7 @@ footer .link:hover{
         top: 12%;
     }
     .text-box1 p, .text-box2 p{
-        font-size: 13px;
+        font-size: 12px;
     }
     .btn4, .btn5{
         width:200px;
@@ -770,165 +759,160 @@ footer .link:hover{
         display: block;
     }
     
-
-
-
-    
-
-
-
-    
-    
 }
-/*@media screen and (max-width:480px) {
 
-}
-@media screen and (max-width:768px){
+@media screen and (min-width:481px) and (max-width:768px){
     #landing{
-        height: 50vh;
+        height: 100vh;
+    }
+    .navbar{
+        margin: 0;
+    }
+    
+    ul li a{
+        font-size: 10px;
     }
     .login{
-        padding:2px;
         font-size: 14px;
-        width: 20px;   
+        padding: 22px 0px;
+        width: 68px;
     }
-    button .btn1{
-
+    #landing{
+        position: relative;
+    }
+    main{
+        top: -10%;
+        position: absolute;
     }
     main h1{
-        font-size:25px;
+        font-size:35px;
     }
     main p{
         font-size: 14px;
     }
     .part1{
-        
+        height: 182px;
+        margin-bottom: 0;
     }
-    .text-a, .text-b{
-        line-height:140% ;
-    }
+    
     .logo-a, .logo-b{
         width: 50%;
         right: 30px;
     }
-    .text-box1 p, .text-box2 p, .text-a, .text-b{
-        width:70%
+    .arrow-nav1, .arrow-nav2{
+        font-size: 30px;
+    }
+    .container{
+        height: 40%;
+        top: 32%;
+    }
+    .card1, .card2{
+        height: 100%;
+        width: 28%;
+    }
+    .card-txt{
         font-size: 10px;
-        font-weight: normal;
-        color: #333333;
-
+        margin: 5px auto;
+        line-height: 20px;
     }
-    
-}*/
-/*@media screen and (max-width: 425px) {
-    body{
-        height:auto;
+    .star{
+        margin-left: 0px;
     }
-    .hamburger{
-        display: flex;
+    .btn1, .btn4, .btn5{
+        height: 70px;
+        font-size: 17px;
+        margin-bottom: 64px;
+        padding: 7px 35px;
+        width: 230px;
     }
-   .navlink{
-       display: none;
-       width: 100%;
-       display: none;
-   }
-  .navbar{ 
-        display: none;
-        flex-direction: column;
-        align-items: flex-start;
+    .text-a p, .text-b p{
+        margin: 0 auto;
+        padding-bottom: 3px;
+        font-size: 15px;
+        line-height: 30px;
     }
-       .navlink ul{
-         flex-direction: row;
-          width: 100%;
-    }
-      .navlink li{
-        text-align: center;
-    }
-       .navlink li a {
-         padding: 0.5rem 1rem;
-         font-size: 10px;
-    }
-       .navlink.active{
-         display: flex;
-       }
-       #about-us, #contact-us{
-           height: 60vh;
-       }
-       .text-a, .text-b{
-           line-height: 18px;
-           padding:0px;
-       }
-       .header{
-           font-size: 22px;
-       }
-       .text-box1, .text{
-           width: 90%;
-       }
-}
-@media screen and (max-width: 768px) {
-    nav{
-        font-size: 12px;
-    }
-
-    .login{
-        width: 120px;
-    
-    }
-    main p{
-        margin-bottom: 5%;
+    .text-box1 p, .text-box2 p{
+        font-size: 16px;
     }
     .counter{
         padding: 0;
     }
     .counter p{
-        font-size: 15px;
+        font-size: 16px;
+        width: 172px;
+        margin-bottom: 8px;
     }
     .counter h3{
-        font-size: 35px;
+        font-size: 40px;
+        text-align: justify;
     }
     .bar{
-        width: 24%;
+        width: 40%;
     }
-
-    .card1, .card2{
-        line-height: 20px;
+    .line3 a{
+        font-size: 17px;
+        bottom: -22px;
+    } 
+    .rectangle{
+        height: 140px;
+        width: 30%;
     }
-    h2{
-        font-size: 30px;
+    .topic1, .topic4{
+        left: 1%;
     }
-    p, strong, h6{
-        font-size: 12px;
+    .topic2, .topic5{
+        right: 35%;
     }
-    .arrow-nav1, .arrow-nav2{
-        font-size: 40px;
-    }
-    .text-a, .text-b{
-        line-height: 24px;
-    }
-    .text-box1 p, .text-box2 p{
-        padding: 10px;
-        font-size: 14px;
-    }
-    .footer-items, .link{
+    .topic1, .topic2, .topic3, .topic4, .topic5, .topic6{
         font-size: 10px;
     }
-}*/
+    .header, .sub h2, #testimonials h2{
+        font-size: 30px;
+    }
+    .first-half h2, .second-half-b h2{
+        font-size: 30px;
+        left: 50px;
+        top: 32px;
+    }
+    .text-a, .text-b{
+        margin: 40px 20px;
+    }
+    .footer{
+        margin: 20px;
+    }
+    .footer-list a, .footer-items p, .link{
+        font-size: 12px;
+    }
+    .footer-icons{
+        left: 50px;
+        margin-top: 209px;
+        width: 80%;
+    } 
+}
 @media screen and (min-width:769px) and (max-width:1024px) {
     .navbar{
         width: 90%;
     }
-    ul li a{
-        font-size: 13px;
-    }
     #landing{
-        position: relative;
+        height: auto;
+    }
+    ul li a{
+        font-size: 15px;
+    }
+    .login{
+        font-size: 14px;
+        padding: 16px 20px;
     }
     main h1{
-        margin-top:80px;
         font-size: 40px;
+        margin-top: 15%;
     }
     main p{
         font-size: 21px;
+    }
+    .btn{
+        margin: 0% auto;
+        padding-bottom: 4%;
     }
     .btn1{
         margin: 0 auto;
@@ -1009,6 +993,7 @@ footer .link:hover{
     }
 
 }
+
 /* @media screen and (min-width:769px) and (max-width:1024px) {
     body{
         width: 100%;
@@ -1080,6 +1065,6 @@ footer .link:hover{
     }
     .footer-items, .link{
         font-size: 11px;
-    } */
+    }  */
 
 }
